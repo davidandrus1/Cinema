@@ -1,0 +1,3 @@
+C:/Users/david/CLionProjects/OOP/Cinema/cmake-build-debug/CMakeFiles/Cinema.dir
+C:/Users/david/CLionProjects/OOP/Cinema/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/david/CLionProjects/OOP/Cinema/cmake-build-debug/CMakeFiles/rebuild_cache.dir
