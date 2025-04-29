@@ -1,14 +1,24 @@
 #include <iostream>
-#include "Controllers/cinema.h"
-#include "Controllers/cinema.cpp"
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include "View/MenuView.cpp"
+#include "Repository/Repository.h"
 using namespace std;
 
 int main() {
-    Cinema cinema;
-    cinema.incarcaFilme("C:\\Users\\david\\CLionProjects\\OOP\\Cinema\\Controllers\\filme.txt");
-    cinema.afiseazaMeniu();
-    cinema.selecteazaFilm();
+    int main() {
+        UserRepo userRepo;
+        MovieRepo movieRepo;
+        BookingRepo bookingRepo;
+
+        MovieController movieCtrl(movieRepo);
+        BookingController bookingCtrl(bookingRepo, movieRepo, userRepo);
+
+        MenuView menu(userRepo, movieCtrl, bookingCtrl);
+        menu.run();
+
+        return 0;
+    }
+
 }

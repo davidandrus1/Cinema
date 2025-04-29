@@ -19,4 +19,5 @@ add_executable(Cinema
         Domain/Seat.h
         Domain/Room.cpp
         Domain/Room.h
-        Controllers/cinema.h)
+        View/cinema.h
+        View/MenuView.cpp)
