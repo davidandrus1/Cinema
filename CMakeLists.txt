@@ -3,4 +3,16 @@ project(Cinema)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Cinema main.cpp)
+add_executable(Cinema main.cpp
+        Domain/User.cpp
+        Domain/User.h
+        Domain/Client.cpp
+        Domain/Client.h
+        Repository/Repository.cpp
+        Repository/Repository.h
+        Domain/Movies.cpp
+        Domain/Movies.h
+        Domain/Booking.cpp
+        Domain/Booking.h
+        Domain/Seat.cpp
+        Domain/Seat.h)
