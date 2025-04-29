@@ -15,4 +15,8 @@ add_executable(Cinema main.cpp
         Domain/Booking.cpp
         Domain/Booking.h
         Domain/Seat.cpp
-        Domain/Seat.h)
+        Domain/Seat.h
+        Domain/Room.cpp
+        Domain/Room.h
+        Controllers/cinema.cpp
+        Controllers/cinema.h)

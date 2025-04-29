@@ -22,7 +22,7 @@ public:
 // --- REPO pentru User ---
 class UserRepo {
 private:
-    vector<User*> users; // User* pentru a putea stoca Client sau Admin
+    vector<User*> users;
 
 public:
     void addUser(User* user);

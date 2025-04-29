@@ -1,0 +1,8 @@
+# ninja log v6
+19	149	7676150068697581	CMakeFiles/Cinema.dir/Domain/Client.cpp.obj	9831091bdde02148
+11	672	7676150068616711	CMakeFiles/Cinema.dir/Domain/User.cpp.obj	a72afd319c8cde9c
+3	847	7676150068534411	CMakeFiles/Cinema.dir/main.cpp.obj	fa814627edcef84b
+53	942	7676150069033388	CMakeFiles/Cinema.dir/Domain/Seat.cpp.obj	8f24ab8c0004181f
+37	1009	7676150068871165	CMakeFiles/Cinema.dir/Domain/Movies.cpp.obj	e706674677f8223
+61	1046	7676150069114250	CMakeFiles/Cinema.dir/Domain/Room.cpp.obj	27c4900e24b82fe6
+71	1176	7676150069215569	CMakeFiles/Cinema.dir/cinema.cpp.obj	a8ed0ffdca49f8c2

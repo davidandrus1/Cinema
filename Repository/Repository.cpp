@@ -1,4 +1,9 @@
-#include "Repo.h"
+#include "Repository.h"
+#include "../Domain/Booking.h"
+#include "../Domain/Movies.h"
+#include "../Domain/User.h"
+#include "../Domain/Room.h"
+#include <algorithm>
 
 // --- MovieRepo ---
 void MovieRepo::addMovie(const Movie& movie) {
@@ -52,21 +57,21 @@ vector<Booking>& BookingRepo::getAllBookings() {
 }
 
 // --- FoodRepo ---
-void FoodRepo::addFood(const Food& food) {
-    foods.push_back(food);
-}
-void FoodRepo::removeFood(int id) {
-    foods.erase(remove_if(foods.begin(), foods.end(), [id](const Food& f) { return f.getId() == id; }), foods.end());
-}
-Food* FoodRepo::findFood(int id) {
-    for (auto& food : foods)
-        if (food.getId() == id)
-            return &food;
-    return nullptr;
-}
-vector<Food>& FoodRepo::getAllFoods() {
-    return foods;
-}
+// void FoodRepo::addFood(const Food& food) {
+//     foods.push_back(food);
+// }
+// void FoodRepo::removeFood(int id) {
+//     foods.erase(remove_if(foods.begin(), foods.end(), [id](const Food& f) { return f.getId() == id; }), foods.end());
+// }
+// Food* FoodRepo::findFood(int id) {
+//     for (auto& food : foods)
+//         if (food.getId() == id)
+//             return &food;
+//     return nullptr;
+// }
+// vector<Food>& FoodRepo::getAllFoods() {
+//     return foods;
+// }
 
 // --- RoomRepo ---
 void RoomRepo::addRoom(const Room& room) {
@@ -75,6 +80,7 @@ void RoomRepo::addRoom(const Room& room) {
 void RoomRepo::removeRoom(int id) {
     rooms.erase(remove_if(rooms.begin(), rooms.end(), [id](const Room& r) { return r.getId() == id; }), rooms.end());
 }
+
 Room* RoomRepo::findRoom(int id) {
     for (auto& room : rooms)
         if (room.getId() == id)

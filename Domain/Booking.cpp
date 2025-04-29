@@ -1,5 +1,7 @@
 #include "Booking.h"
 #include <sstream>
+#include <iostream>
+using namespace std;
 
 Booking::Booking() : idBooking(0), idMovie(0), clientName(""), seatNumber(0) {}
 

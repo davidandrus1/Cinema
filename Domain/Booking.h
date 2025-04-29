@@ -7,9 +7,10 @@ private:
     int idBooking;
     int idMovie;
     string clientName;
-    int seatNumber;
 
 public:
+    int seatNumber;
+
     Booking();
     Booking(int idBooking, int idMovie, string clientName, int seatNumber);
 
@@ -26,6 +27,4 @@ public:
     // CSV serialization
     string toCSV() const;
 
-    // Overload <<
-    friend ostream& operator<<(ostream& out, const Booking& booking);
 };

@@ -55,17 +55,17 @@ build CMakeFiles/Cinema.dir/main.cpp.obj: CXX_COMPILER__Cinema_unscanned_Debug C
   OBJECT_DIR = CMakeFiles\Cinema.dir
   OBJECT_FILE_DIR = CMakeFiles\Cinema.dir
 
-build CMakeFiles/Cinema.dir/User.cpp.obj: CXX_COMPILER__Cinema_unscanned_Debug C$:/Users/david/CLionProjects/OOP/Cinema/User.cpp || cmake_object_order_depends_target_Cinema
-  DEP_FILE = CMakeFiles\Cinema.dir\User.cpp.obj.d
+build CMakeFiles/Cinema.dir/Domain/User.cpp.obj: CXX_COMPILER__Cinema_unscanned_Debug C$:/Users/david/CLionProjects/OOP/Cinema/Domain/User.cpp || cmake_object_order_depends_target_Cinema
+  DEP_FILE = CMakeFiles\Cinema.dir\Domain\User.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Cinema.dir
-  OBJECT_FILE_DIR = CMakeFiles\Cinema.dir
+  OBJECT_FILE_DIR = CMakeFiles\Cinema.dir\Domain
 
-build CMakeFiles/Cinema.dir/Client.cpp.obj: CXX_COMPILER__Cinema_unscanned_Debug C$:/Users/david/CLionProjects/OOP/Cinema/Client.cpp || cmake_object_order_depends_target_Cinema
-  DEP_FILE = CMakeFiles\Cinema.dir\Client.cpp.obj.d
+build CMakeFiles/Cinema.dir/Domain/Client.cpp.obj: CXX_COMPILER__Cinema_unscanned_Debug C$:/Users/david/CLionProjects/OOP/Cinema/Domain/Client.cpp || cmake_object_order_depends_target_Cinema
+  DEP_FILE = CMakeFiles\Cinema.dir\Domain\Client.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Cinema.dir
-  OBJECT_FILE_DIR = CMakeFiles\Cinema.dir
+  OBJECT_FILE_DIR = CMakeFiles\Cinema.dir\Domain
 
 build CMakeFiles/Cinema.dir/Repository/Repository.cpp.obj: CXX_COMPILER__Cinema_unscanned_Debug C$:/Users/david/CLionProjects/OOP/Cinema/Repository/Repository.cpp || cmake_object_order_depends_target_Cinema
   DEP_FILE = CMakeFiles\Cinema.dir\Repository\Repository.cpp.obj.d
@@ -91,6 +91,18 @@ build CMakeFiles/Cinema.dir/Domain/Seat.cpp.obj: CXX_COMPILER__Cinema_unscanned_
   OBJECT_DIR = CMakeFiles\Cinema.dir
   OBJECT_FILE_DIR = CMakeFiles\Cinema.dir\Domain
 
+build CMakeFiles/Cinema.dir/Domain/Room.cpp.obj: CXX_COMPILER__Cinema_unscanned_Debug C$:/Users/david/CLionProjects/OOP/Cinema/Domain/Room.cpp || cmake_object_order_depends_target_Cinema
+  DEP_FILE = CMakeFiles\Cinema.dir\Domain\Room.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Cinema.dir
+  OBJECT_FILE_DIR = CMakeFiles\Cinema.dir\Domain
+
+build CMakeFiles/Cinema.dir/cinema.cpp.obj: CXX_COMPILER__Cinema_unscanned_Debug C$:/Users/david/CLionProjects/OOP/Cinema/cinema.cpp || cmake_object_order_depends_target_Cinema
+  DEP_FILE = CMakeFiles\Cinema.dir\cinema.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Cinema.dir
+  OBJECT_FILE_DIR = CMakeFiles\Cinema.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Cinema
@@ -99,7 +111,7 @@ build CMakeFiles/Cinema.dir/Domain/Seat.cpp.obj: CXX_COMPILER__Cinema_unscanned_
 #############################################
 # Link the executable Cinema.exe
 
-build Cinema.exe: CXX_EXECUTABLE_LINKER__Cinema_Debug CMakeFiles/Cinema.dir/main.cpp.obj CMakeFiles/Cinema.dir/User.cpp.obj CMakeFiles/Cinema.dir/Client.cpp.obj CMakeFiles/Cinema.dir/Repository/Repository.cpp.obj CMakeFiles/Cinema.dir/Domain/Movies.cpp.obj CMakeFiles/Cinema.dir/Domain/Booking.cpp.obj CMakeFiles/Cinema.dir/Domain/Seat.cpp.obj
+build Cinema.exe: CXX_EXECUTABLE_LINKER__Cinema_Debug CMakeFiles/Cinema.dir/main.cpp.obj CMakeFiles/Cinema.dir/Domain/User.cpp.obj CMakeFiles/Cinema.dir/Domain/Client.cpp.obj CMakeFiles/Cinema.dir/Repository/Repository.cpp.obj CMakeFiles/Cinema.dir/Domain/Movies.cpp.obj CMakeFiles/Cinema.dir/Domain/Booking.cpp.obj CMakeFiles/Cinema.dir/Domain/Seat.cpp.obj CMakeFiles/Cinema.dir/Domain/Room.cpp.obj CMakeFiles/Cinema.dir/cinema.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Cinema.dir
