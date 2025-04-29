@@ -1,8 +1,20 @@
 # ninja log v6
 19	149	7676150068697581	CMakeFiles/Cinema.dir/Domain/Client.cpp.obj	9831091bdde02148
 11	672	7676150068616711	CMakeFiles/Cinema.dir/Domain/User.cpp.obj	a72afd319c8cde9c
+61	1046	7676150069114250	CMakeFiles/Cinema.dir/Domain/Room.cpp.obj	27c4900e24b82fe6
+4	405	7676171390869898	build.ninja	1feeff7fc280b93b
 3	847	7676150068534411	CMakeFiles/Cinema.dir/main.cpp.obj	fa814627edcef84b
 53	942	7676150069033388	CMakeFiles/Cinema.dir/Domain/Seat.cpp.obj	8f24ab8c0004181f
-37	1009	7676150068871165	CMakeFiles/Cinema.dir/Domain/Movies.cpp.obj	e706674677f8223
-61	1046	7676150069114250	CMakeFiles/Cinema.dir/Domain/Room.cpp.obj	27c4900e24b82fe6
 71	1176	7676150069215569	CMakeFiles/Cinema.dir/cinema.cpp.obj	a8ed0ffdca49f8c2
+37	1009	7676150068871165	CMakeFiles/Cinema.dir/Domain/Movies.cpp.obj	e706674677f8223
+69	1057	7676167649935684	CMakeFiles/Cinema.dir/Controllers/cinema.cpp.obj	40c4d8dcb24a1eb8
+3	373	7676171390869898	build.ninja	1feeff7fc280b93b
+43	989	7676171392341149	CMakeFiles/Cinema.dir/main.cpp.obj	fa814627edcef84b
+14	85	7676171576728795	CMakeFiles/Cinema.dir/Domain/Booking.cpp.obj	9debfc46a1330e38
+7	90	7676171887244831	CMakeFiles/Cinema.dir/Repository/Repository.cpp.obj	a68ebfba6389e8c3
+91	550	7676171888073729	Cinema.exe	91ff813a7612b7a5
+18	794	7676181043292917	CMakeFiles/Cinema.dir/Domain/User.cpp.obj	a72afd319c8cde9c
+31	822	7676181043414874	CMakeFiles/Cinema.dir/Domain/Booking.cpp.obj	9debfc46a1330e38
+9	994	7676181043201509	CMakeFiles/Cinema.dir/main.cpp.obj	fa814627edcef84b
+7	1171	7676181769893606	CMakeFiles/Cinema.dir/Repository/Repository.cpp.obj	a68ebfba6389e8c3
+1172	1423	7676181781544616	Cinema.exe	91ff813a7612b7a5

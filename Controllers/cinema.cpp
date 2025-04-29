@@ -3,9 +3,6 @@
 #include <fstream>
 #include <sstream>
 
-
-using namespace std;
-
 void Cinema::incarcaFilme(const std::string& numeFisier) {
     std::ifstream fisier(numeFisier);
     if (!fisier.is_open()) {
@@ -15,12 +12,12 @@ void Cinema::incarcaFilme(const std::string& numeFisier) {
 
     std::string linie;
     while (std::getline(fisier, linie)) {
-        stringstream ss(linie);
-        string titlu, gen;
+        std::stringstream ss(linie);
+        std::string titlu, gen;
         int durata;
 
-        getline(ss, titlu, ',');
-        getline(ss, gen, ',');
+        std::getline(ss, titlu, ',');
+        std::getline(ss, gen, ',');
         ss >> durata;
 
         Film film;
@@ -34,7 +31,7 @@ void Cinema::incarcaFilme(const std::string& numeFisier) {
 }
 
 void Cinema::afiseazaMeniu() {
-    std::cout << "Bine ați venit la Cinema!\n";
+    std::cout << "Bine ati venit la Cinema!\n";
     std::cout << "Filme disponibile:\n";
     for (size_t i = 0; i < filme.size(); ++i) {
         std::cout << i + 1 << ". " << filme[i].titlu << " (" << filme[i].gen 
@@ -44,16 +41,16 @@ void Cinema::afiseazaMeniu() {
 
 void Cinema::selecteazaFilm() {
     int alegere;
-    std::cout << "Introduceți numărul filmului dorit: ";
+    std::cout << "Introduceti numarul filmului dorit: ";
     std::cin >> alegere;
 
     if (alegere > 0 && alegere <= static_cast<int>(filme.size())) {
         Film& film = filme[alegere - 1];
-        std::cout << "\nAți ales: " << film.titlu << "\n";
+        std::cout << "\nAti ales: " << film.titlu << "\n";
         std::cout << "Gen: " << film.gen << "\n";
         std::cout << "Durata: " << film.durata << " minute\n";
-        std::cout << "Vizionare plăcută!\n";
+        std::cout << "Vizionare placuta!\n";
     } else {
-        std::cout << "Selecție invalidă!\n";
+        std::cout << "Selectie invalida!\n";
     }
 }

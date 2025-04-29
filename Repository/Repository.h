@@ -3,7 +3,7 @@
 #include "../Domain/Booking.h"
 #include "../Domain/Movies.h"
 #include "../Domain/User.h"
-
+#include "../Domain/Room.h"
 
 using namespace std;
 

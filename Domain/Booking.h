@@ -4,12 +4,13 @@ using namespace std;
 
 class Booking {
 private:
-    int idBooking;
-    int idMovie;
-    string clientName;
+
 
 public:
     int seatNumber;
+    int idBooking;
+    int idMovie;
+    string clientName;
 
     Booking();
     Booking(int idBooking, int idMovie, string clientName, int seatNumber);

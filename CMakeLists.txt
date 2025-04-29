@@ -3,7 +3,8 @@ project(Cinema)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Cinema main.cpp
+add_executable(Cinema
+        main.cpp
         Domain/User.cpp
         Domain/User.h
         Domain/Client.cpp
@@ -18,5 +19,4 @@ add_executable(Cinema main.cpp
         Domain/Seat.h
         Domain/Room.cpp
         Domain/Room.h
-        Controllers/cinema.cpp
         Controllers/cinema.h)
